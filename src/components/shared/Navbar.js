@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../styles/utilities.css'
-import '../../styles/styles.css';
+import '../../styles/shared.css';
 const Navbar = () => {
   return (
     <div className="navbar">
         <div className="container flex">
-            <h1>Nick Kanning </h1>
+            <a href="/"><h1>Nick Kanning </h1></a>
             <nav>
                 <ul>
                     <li><a href ="/blog">Blog</a></li>
