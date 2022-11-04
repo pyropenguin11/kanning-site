@@ -1,7 +1,18 @@
 import React from 'react';
+import Navbar from '../shared/Navbar';
+import Footer from '../shared/Footer';
+import '../../styles/home.css';
+const Home = () => {
+  return (
+    <>
+      <Navbar/>
+      <div className="home-body">
 
-const Home = (props) => {
-  return <h1>Home Page</h1>;
+      </div>
+      <Footer />
+    </>
+  );
+
 };
 
 export default Home;
