@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/utilities.css'
-import '../../styles/styles.css';
+import '../../styles/shared.css';
 const Navbar = () => {
   return (
     <div className="navbar">

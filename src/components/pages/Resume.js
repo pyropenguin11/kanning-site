@@ -7,7 +7,7 @@ const Resume = () => {
   return (
     <>
       <Navbar/>
-      <div className="home-body">
+      <div className="main-body">
 
       </div>
       <Footer />
