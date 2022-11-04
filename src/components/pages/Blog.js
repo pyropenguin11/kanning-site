@@ -1,7 +1,18 @@
 import React from 'react';
+import Navbar from '../shared/Navbar';
+import Footer from '../shared/Footer';
+import '../../styles/blog.css';
 
-const Blog = (props) => {
-  return <h1>Blog</h1>;
+const Blog = () => {
+  return (
+    <>
+      <Navbar/>
+      <div className="home-body">
+
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default Blog;
