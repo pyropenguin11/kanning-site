@@ -1,0 +1,56 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    background-color: gray;
+    color: black;
+    height: 70px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    padding: 10px;
+}
+/* Footer */
+.footer {
+    background-color: gray;
+    color: black;
+    height: 70px;
+}
+
+.footer .flex {
+    justify-content: space-between;
+}
+
+.footer ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer li {
+    padding: 10px;
+}
+
+.icon {
+    padding: 0 10px;
+}
