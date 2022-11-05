@@ -10,14 +10,24 @@ const Contact = () => {
     <>
       <Navbar/>
       <div className="body">
-        <h3>Contact me! </h3>
-          <div className="main-body">
+        <div className="main-body center">
+          <h3>Contact Me! </h3>
           <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
+            <p>
+              <input type="hidden" name="form-name" value="contact" />
+            </p>
+            <p>
               <input type="text" name="name" placeholder="Name" required></input>
+            </p>
+            <p>
               <input type="email" name="email" placeholder="Email" required></input>
+            </p>
+            <p>
               <textarea name="message" placeholder="Message" required></textarea>
+            </p>
+            <p>
               <button type="submit">Send</button>
+            </p>
           </form>
         </div>
       </div>
