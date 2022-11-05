@@ -5,6 +5,8 @@ body {
 
 .main-body {
     height: 800px;
+    width: 100%;
+    text-align: center;
 }
 
 a {

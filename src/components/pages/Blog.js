@@ -8,7 +8,7 @@ const Blog = () => {
     <>
       <Navbar/>
       <div className="main-body">
-
+        In Progress
       </div>
       <Footer />
     </>
