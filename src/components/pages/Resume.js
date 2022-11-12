@@ -8,7 +8,7 @@ const Resume = () => {
     <>
       <Navbar/>
       <div className="main-body">
-        In Progess
+        In Progress
       </div>
       <Footer />
     </>
