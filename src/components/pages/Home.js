@@ -8,12 +8,6 @@ const Home = () => {
     <>
       <Navbar/>
       <div className="home-container">
-        <div className="panel">
-          Blorp
-        </div>
-        <div className="panel">
-          Blorp
-        </div>
       </div>
       <Footer />
     </>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../shared/Navbar';
 import Footer from '../shared/Footer';
+import ImageDisplay from '../resumePage/imageDisplay';
 import '../../styles/resume.css';
 
 const Resume = () => {
@@ -8,7 +9,10 @@ const Resume = () => {
     <>
       <Navbar/>
       <div className="main-body">
-        In Progress
+        <ImageDisplay
+          name="homer"
+          format="png"
+        />
       </div>
       <Footer />
     </>
