@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
         <div className="container flex">
-            <div>
+            <div className="created-by">
                 <FontAwesomeIcon className="icon" icon={faUser} />
                 Created By Nick Kanning 
             </div>

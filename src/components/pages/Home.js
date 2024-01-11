@@ -33,13 +33,14 @@ const Home = () => {
   ];
   return (
     <>
+      <div className="wrapper">
       <Navbar/>
       <div className="main-container">
         <div className="content-container">
         <h1>
           Welcome to my website!
         </h1>
-        <div>
+        <div className="cards-container">
           {cards.map((c) => {
             return (
               <ContentCard
@@ -54,6 +55,7 @@ const Home = () => {
         </div>
       </div>
       <Footer />
+      </div>
     </>
   );
 
