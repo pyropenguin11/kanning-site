@@ -69,7 +69,6 @@ a:visited {
 }
 
 @media screen and (max-width: 600px) {
-
     .main-container {
         width: 90%;
     }
@@ -86,9 +85,46 @@ a:visited {
         display: none;
     }
 
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
     .footer .created-by {
         font-size: 0.85rem;
+    } 
+
+    .footer a {
+        font-size: 0.85rem;
     }
+}
+
+@media screen and (min-width: 365px) and (max-width: 400px) {
+    .footer .created-by {
+        font-size: 0.8rem;
+    }
+
+    .footer a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 365px) {
+    .footer .created-by {
+        font-size: 0.7rem;
+    }
+
+    .footer a {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .footer .created-by {
+        font-size: 0.6rem;
+    }
+
+    .footer a {
+        font-size: 0.6rem;
+    }  
 }
 
 /* Navbar */
