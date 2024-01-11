@@ -1,0 +1,27 @@
+.content-card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    margin: 25px 10px;
+    background-color: #efeff0;
+    box-shadow: 2px 2px 2px #2d4662;
+}
+
+.image {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.left-image {
+    padding-left: 25px;
+}
+
+.right-image {
+    padding-right: 25px;
+}
+
+.inner-text {
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+}

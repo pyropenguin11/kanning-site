@@ -7,8 +7,10 @@ const Blog = () => {
   return (
     <>
       <Navbar/>
-      <div className="main-body">
-        In Progress
+      <div className="main-container">
+        <h1>
+          In Progress
+        </h1>
       </div>
       <Footer />
     </>
