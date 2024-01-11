@@ -8,9 +8,10 @@ import '../../styles/contact.css';
 const Contact = () => {
   return (
     <>
+      <div className="wrapper">
       <Navbar/>
-      <div className="main-container">
-        <div className="main-body center">
+      <div className="contact-container">
+        <div className="form-body center">
           <h3>Contact Me! </h3>
           <form name="contact" method="POST" data-netlify="true">
             <p>
@@ -32,6 +33,7 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
+      </div>
     </>
   );
 };

@@ -3,30 +3,34 @@
     color: #2d4662
 }
 
-body {
+body, html {
     background-color: #e0e0e1;
+    height: 100%;
+    padding: 0;
     margin: 0;
+}
+
+#root {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    -ms-flex-direction: column;
 }
 
 .main-container {
     width: 60%;
-    height: 700px;
-    margin: 0 auto;
+    margin: 1rem auto;
     background-color: #e9e9ea;
     box-shadow: 3px 3px 3px #2d4662;
-    /* border: 1px solid black; */
+    flex: 1;
 }
 
 .content-container {
-    margin: 10px;
-}
-
-.main-body {
-    height: 80%;
-    width: 100%;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin: 0.5rem;
 }
 
 a {
@@ -43,15 +47,55 @@ a:visited {
 }
 
 .main-container h1 {
-    padding-top: 10px;
+    padding-top: 0.8rem
+}
+
+@media screen and (min-width: 1260px) and (max-width: 1780px) {
+    .main-container {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1260px) {
+    .main-container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+    .main-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main-container {
+        width: 90%;
+    }
+    .main-container h1 {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .navbar h1 {
+        font-size: 1rem;
+    }
+
+    .footer .icon {
+        display: none;
+    }
+
+    .footer .created-by {
+        font-size: 0.85rem;
+    }
 }
 
 /* Navbar */
 .navbar {
     background-color: #e0e0e1;
     color: #5d5e60;
-    height: 70px;
-    /* border-bottom: 2px solid #2d4662; */
+    height: 10%;
 }
 
 .navbar .flex {
@@ -64,15 +108,14 @@ a:visited {
 }
 
 .navbar li {
-    padding: 10px;
+    padding: 0 0.5rem;
 }
 /* Footer */
 .footer {
     background-color: #e0e0e1;
     color: #2d4662;
-    height: 50px;
-    margin-top: 20px;
-    /* border-top: 2px solid #3d4662; */
+    height: 5rem;
+    padding-top: 1rem;
 }
 
 .footer .flex {
@@ -85,9 +128,9 @@ a:visited {
 }
 
 .footer li {
-    padding: 10px;
+    padding: 0 0.5rem;
 }
 
 .icon {
-    padding: 0 10px;
+    padding: 0 0.5rem;
 }
