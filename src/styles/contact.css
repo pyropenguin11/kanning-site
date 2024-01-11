@@ -3,18 +3,18 @@
 }
 
 input {
-    width: 33%;
+    width: 50%;
     outline: none;
     border: none;
     border-bottom: 1px solid #2d4662;
-    background-color: #faf5ef;
+    background-color: #eaeae9;
     font-size: 0.9rem;
 }
 
 
 textarea {
-    background-color: #faf5ef;
-    width: 33%;
+    background-color: #eaeae9;
+    width: 50%;
     height: 150px;
     border-radius: 4px;
     resize: none;
@@ -25,5 +25,5 @@ textarea {
 button {
     border-radius: 0px;
     font-size: 0.9rem;
-    width: 5%;
+    width: 15%;
 }

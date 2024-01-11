@@ -3,13 +3,13 @@ import Navbar from '../shared/Navbar';
 import Footer from '../shared/Footer';
 import '../../styles/shared.css';
 import '../../styles/contact.css';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+
 
 const Contact = () => {
   return (
     <>
       <Navbar/>
-      <div className="body">
+      <div className="main-container">
         <div className="main-body center">
           <h3>Contact Me! </h3>
           <form name="contact" method="POST" data-netlify="true">
