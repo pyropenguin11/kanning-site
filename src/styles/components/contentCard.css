@@ -1,48 +1,74 @@
 .content-card {
     display: flex;
     flex-direction: row;
-    border-radius: 4px;
-    margin: 1rem 0.5rem;
-    background-color: #efeff0;
-    box-shadow: 2px 2px 2px #2d4662;
+    border-radius: 12px;
+    background-color: var(--snes-panel);
+    border: 1px solid var(--snes-border);
+    box-shadow: 0 10px 20px rgba(59, 47, 102, 0.15);
+    overflow: hidden;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+    width: 100%;
+}
+
+.content-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 26px rgba(59, 47, 102, 0.18);
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
 }
 
 .image {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .left-image {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 .right-image {
-    padding-right: 1rem;
+    padding-right: 1.5rem;
 }
 
 .inner-text {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 1.5rem;
     display: flex;
+    align-items: center;
+    line-height: 1.6;
+    color: var(--snes-text);
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1024px) {
     .content-card {
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
     .image {
-        padding: 1rem 0 0 0;
-    }
-
-    /* Image goes on top for smaller displays */
-
-    .image {
+        padding: 1.5rem 0 0 0;
         order: 1;
+        display: flex;
+        justify-content: center;
     }
 
     .inner-text {
         order: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-card {
+        border-radius: 10px;
+    }
+
+    .image {
+        padding: 1.25rem 0 0 0;
+        justify-content: center;
+    }
+
+    .inner-text {
+        padding: 1.25rem;
     }
 }

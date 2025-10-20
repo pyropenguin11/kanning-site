@@ -1,7 +1,6 @@
 import React from 'react';
-import '../../styles/components/cardText.css';
-const CardText = ({text}) => {
 
+const CardText = ({text}) => {
     return (
         <div className="text-container">
             <p>{text}</p>

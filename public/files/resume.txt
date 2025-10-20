@@ -1,0 +1,51 @@
+Nick Kanning
+Minneapolis, MN
+Please use the contact form on the site to get in touch.
+
+EDUCATION
+
+University of Minnesota | Minneapolis, MN	
+M.S. in Computer Science	        	                                                                                            December 2025 (anticipated)
+B.S. in Computer Science and Mathematics				             	  			  December 2019                     
+	             				                                  		            
+WORK EXPERIENCE
+
+Blain’s Farm and Fleet | Janesville, WI	
+Software Developer	January 2022 - June 2023
+
+	•	Led development of new automotive services scheduling system and customer-facing website, enabling customers to create over 300,000 appointments in one year with a better user experience
+	•	Managed deployment of the website on AWS server using Azure DevOps pipeline with Docker
+	•	Integrated the new automotive system with the existing store-facing software in order to streamline the checkout process at the stores
+	•	Updated the internal call center application to allow call center employees to more efficiently schedule vehicle orders and handle customer queries, resulting in faster calls
+	•	Modernized error handling of the company intranet site, utilizing Power Automate for more finely tuned alerting
+	•	Technical skills: C#, .NET, Javascript, React, Redux, Redux Toolkit, RTK Query, Docker, Entity Framework, SQL
+
+Epic Systems | Madison, WI                    	
+Software Developer        	              February 2020 - December 2021
+
+	•	Oversaw migration of several existing pages to a new web-based client, creating infrastructure for forms used by clinicians to enter patient data
+	•	Designed and implemented performance testing process to verify quality of released features and avoid performance degradations
+	•	Added new functionality to allow clinicians to view multiple patient forms on one section of the screen
+	•	Fixed hundreds of existing bugs in the team’s application, including accessibility issues and time-sensitive critical errors
+	•	Technical skills: C#, Javascript, Typescript, MUMPS, Fiddler, VS Profiler
+
+TCF Bank | Plymouth, MN     	
+IT Digital Intern       	May 2018 – August 2018
+
+	•	Created DevOps dashboard for IT group to monitor development and deployment of company websites
+	•	Worked in Visual Studio with C#/.NET in order to call Jenkins, Octopus, and VersionOne APIs and gather data to be stored in SQLite database
+	•	Technical skills: C#. JavaScript, JQuery, VersionOne
+
+Optum | Minnetonka, MN    	
+IT Digital Intern	      June 2017 – August 2017
+
+	•	Developed in Splunk platform, creating dashboards for clear visualization of Optum's data management processes
+	•	Performed feature engineering in Python for machine learning project, looking to identify repeat callers to call center
+	•	Technical skills: Python, Splunk
+
+TECHNICAL SKILLS
+
+
+Languages: C#, Javascript/HTML/CSS, SQL, Typescript, MUMPS, Python
+Frameworks: React, Redux, Redux Toolkit, RTK Query, JQuery, .NET, Entity Framework, Fluent API
+Tools: Git, Docker, AWS, Fiddler, Postman, Jira, CI/CD, Microsoft Power Automate
