@@ -1,98 +1,155 @@
-.contact-container {
-    width: 60%;
-    margin: 1rem auto;
-    background-color: #e9e9ea;
-    box-shadow: 3px 3px 3px #2d4662;
-    flex: 1;
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
-.form-body {
-    height: 80%;
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.contact-card {
+    background-color: var(--snes-panel);
+    border: 1px solid var(--snes-border);
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 12px 24px rgba(59, 47, 102, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card h2 {
+    margin: 0;
+    color: var(--snes-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 1rem;
+}
+
+.contact-card p {
+    margin: 0;
+    line-height: 1.7;
+    color: var(--snes-subtext);
+}
+
+.contact-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-info-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(188, 182, 170, 0.6);
+}
+
+.contact-info-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--snes-highlight);
+    font-weight: 700;
+}
+
+.contact-info-list a {
+    color: var(--snes-accent);
+    font-weight: 600;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--snes-subtext);
+}
+
+.contact-field input,
+.contact-field textarea {
     width: 100%;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    border: 1px solid var(--snes-border);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--snes-text);
+    font-size: 1rem;
+    transition: border-color 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
 }
 
-.center {
-    margin: 0 auto;
-}
-
-input {
-    width: 50%;
+.contact-field input:focus,
+.contact-field textarea:focus {
     outline: none;
+    border-color: var(--snes-highlight);
+    box-shadow: 0 0 0 3px rgba(199, 72, 137, 0.2);
+    background-color: #fff;
+}
+
+.contact-field textarea {
+    resize: vertical;
+    min-height: 160px;
+    line-height: 1.5;
+}
+
+.contact-submit {
+    align-self: flex-start;
+    padding: 0.85rem 1.75rem;
+    border-radius: 999px;
     border: none;
-    border-bottom: 1px solid #2d4662;
-    background-color: #eaeae9;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--snes-accent), var(--snes-highlight));
+    color: var(--snes-card-header-text);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
 }
 
-
-textarea {
-    background-color: #eaeae9;
-    width: 50%;
-    height: 100px;
-    border-radius: 4px;
-    resize: none;
-    outline: none;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+.contact-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(59, 47, 102, 0.2);
 }
 
-button {
-    border-radius: 0px;
-    font-size: 0.9rem;
-    width: 15%;
+.contact-submit:active {
+    transform: translateY(0);
+    opacity: 0.85;
 }
 
-@media screen and (min-width: 780px) and (max-width: 1260px) {
-    .contact-container {
-        width: 75%;
-    }
-    input {
-        width: 70%;
-    }
+.hidden-field {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
 
-    textarea {
-        width: 70%;
-    }
-
-    button {
-        width: 15%;
+@media screen and (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 780px) {
-    .contact-container {
-        width: 85%;
-    }
-    input {
-        width: 70%;
+@media screen and (max-width: 600px) {
+    .contact-card {
+        padding: 1.5rem;
+        gap: 1.25rem;
     }
 
-    textarea {
-        width: 70%;
-    }
-
-    button {
-        width: 20%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .contact-container {
-        width: 90%;
-    }
-    input {
-        width: 75%;
-    }
-
-    textarea {
-        width: 75%;
-    }
-
-    button {
-        width: 25%;
+    .contact-field textarea {
+        min-height: 140px;
     }
 }

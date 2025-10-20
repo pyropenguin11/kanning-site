@@ -1,0 +1,178 @@
+.resume-card {
+    border-radius: 8px;
+    background-color: var(--snes-panel);
+    border: 1px solid var(--snes-border);
+    box-shadow: 0 8px 18px rgba(59, 47, 102, 0.15);
+    overflow: hidden;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(59, 47, 102, 0.2);
+}
+
+.resume-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1.25rem;
+    background: linear-gradient(135deg, var(--snes-accent), var(--snes-highlight));
+    color: var(--snes-card-header-text);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.resume-card-header svg {
+    padding: 0;
+    width: 1.1rem;
+    height: 1.1rem;
+    color: inherit;
+}
+
+.resume-card-header h2 {
+    margin: 0;
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+}
+
+.resume-card .inner-text {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.resume-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.resume-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    color: var(--snes-subtext);
+    font-size: 0.95rem;
+}
+
+.resume-entry-header h3 {
+    margin: 0;
+    color: var(--snes-text);
+    font-size: 1.05rem;
+}
+
+.resume-entry-meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--snes-subtext);
+}
+
+.resume-entry ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.resume-entry li {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    color: var(--snes-text);
+}
+
+.resume-entry li::marker {
+    color: var(--snes-highlight);
+}
+
+.resume-entry li strong {
+    display: inline-block;
+    margin-right: 0.35rem;
+}
+
+.resume-entry li span {
+    color: var(--snes-subtext);
+    font-size: 0.9rem;
+}
+
+.resume-entry-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--snes-subtext);
+}
+
+.resume-entry-skills span:first-child {
+    font-weight: 700;
+    color: var(--snes-accent);
+}
+
+.resume-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.resume-summary-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.resume-summary-contact span {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--snes-subtext);
+}
+
+.resume-summary-contact a {
+    color: var(--snes-accent);
+    font-weight: 600;
+}
+
+.resume-skills h4 {
+    margin: 0 0 0.25rem 0;
+    color: var(--snes-accent);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+}
+
+.resume-skills p {
+    margin: 0;
+    color: var(--snes-text);
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 780px) {
+    .resume-entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .resume-entry-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
