@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/components/contentCard.css';
 import CardText from './CardText';
 import ImageDisplay from './ImageDisplay';
-const ContentCard = ({text, imageName, imageFormat, imageSide}) => {
+const ContentCard = ({text, imageName, imageFormat, imageAlt, imageSide}) => {
   return (
     <div className="content-card">
       {imageSide === 'left' &&
@@ -10,6 +10,7 @@ const ContentCard = ({text, imageName, imageFormat, imageSide}) => {
         <ImageDisplay
           name={imageName}
           format={imageFormat}
+          alt={imageAlt}
         />
       </div>
       )}
@@ -23,6 +24,7 @@ const ContentCard = ({text, imageName, imageFormat, imageSide}) => {
         <ImageDisplay
           name={imageName}
           format={imageFormat}
+          alt={imageAlt}
         />
       </div>
       )}

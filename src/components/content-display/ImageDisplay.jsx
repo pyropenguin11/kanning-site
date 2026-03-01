@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/components/imageDisplay.css';
-const ImageDisplay = ({name, format}) => {
+const ImageDisplay = ({name, format, alt}) => {
   const baseUrl = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL) ? import.meta.env.BASE_URL : '/';
   const imagePath = `${baseUrl}images/${name}.${format}`;
 
@@ -9,7 +9,7 @@ const ImageDisplay = ({name, format}) => {
       className="imageDisplayContainer">
       <img 
         src={imagePath}
-        alt={`${name}`}
+        alt={alt || `${name} image`}
         className="imageDisplayImage"
       />
     </div>

@@ -1,51 +1,51 @@
 Nick Kanning
-Minneapolis, MN
-Please use the contact form on the site to get in touch.
+kanning.org
 
-EDUCATION
+SUMMARY
 
-University of Minnesota | Minneapolis, MN	
-M.S. in Computer Science	        	                                                                                            December 2025 (anticipated)
-B.S. in Computer Science and Mathematics				             	  			  December 2019                     
+
+Software Engineer with 5+ years of experience designing and modernizing full-stack systems in retail, healthcare, and workforce management domains. Strong background in C#/.NET, React, and Azure DevOps with experience in microservice architecture, CI/CD modernization, and cloud deployment strategy.			             	  		               
 	             				                                  		            
 WORK EXPERIENCE
 
-Blain’s Farm and Fleet | Janesville, WI	
-Software Developer	January 2022 - June 2023
+TempWorks Software | Bloomington, MN    	
+Software Engineer	      July 2024 – Present
 
-	•	Led development of new automotive services scheduling system and customer-facing website, enabling customers to create over 300,000 appointments in one year with a better user experience
-	•	Managed deployment of the website on AWS server using Azure DevOps pipeline with Docker
-	•	Integrated the new automotive system with the existing store-facing software in order to streamline the checkout process at the stores
-	•	Updated the internal call center application to allow call center employees to more efficiently schedule vehicle orders and handle customer queries, resulting in faster calls
-	•	Modernized error handling of the company intranet site, utilizing Power Automate for more finely tuned alerting
-	•	Technical skills: C#, .NET, Javascript, React, Redux, Redux Toolkit, RTK Query, Docker, Entity Framework, SQL
+Designed and implemented a microservice integrating TempWorks’ core platform with a third-party banking partner to enable earned wage access for temporary workers
+Migrated classic Azure DevOps pipelines to YAML-based CI/CD workflows, enabling automated deployments to Azure App Services and improving release reliability
+Led performance testing during cloud migration initiative, identifying latency increases when decoupling API services from database infrastructure and influencing infrastructure deployment strategy
+
+Blain’s Farm and Fleet | Janesville, WI	
+Software Developer	January 2022 – June 2023
+
+Led full-stack development of automotive services scheduling platform (C#/.NET, React), enabling 300,000+ customer appointments in the first year
+Integrated platform with legacy store systems to streamline in-store checkout workflows
+Automated AWS deployments using Docker and Azure DevOps pipelines
+Modernized intranet error handling and alerting using Power Automate
 
 Epic Systems | Madison, WI                    	
-Software Developer        	              February 2020 - December 2021
+Software Developer        	              February 2020 – December 2021
 
-	•	Oversaw migration of several existing pages to a new web-based client, creating infrastructure for forms used by clinicians to enter patient data
-	•	Designed and implemented performance testing process to verify quality of released features and avoid performance degradations
-	•	Added new functionality to allow clinicians to view multiple patient forms on one section of the screen
-	•	Fixed hundreds of existing bugs in the team’s application, including accessibility issues and time-sensitive critical errors
-	•	Technical skills: C#, Javascript, Typescript, MUMPS, Fiddler, VS Profiler
+Oversaw migration of clinical forms to modern web client, building reusable infrastructure for patient data entry workflows
+Designed performance testing framework to prevent regressions and ensure feature reliability
+Improved reliability and accessibility of large-scale healthcare application by resolving high-priority defects
 
 TCF Bank | Plymouth, MN     	
 IT Digital Intern       	May 2018 – August 2018
 
-	•	Created DevOps dashboard for IT group to monitor development and deployment of company websites
-	•	Worked in Visual Studio with C#/.NET in order to call Jenkins, Octopus, and VersionOne APIs and gather data to be stored in SQLite database
-	•	Technical skills: C#. JavaScript, JQuery, VersionOne
-
 Optum | Minnetonka, MN    	
 IT Digital Intern	      June 2017 – August 2017
 
-	•	Developed in Splunk platform, creating dashboards for clear visualization of Optum's data management processes
-	•	Performed feature engineering in Python for machine learning project, looking to identify repeat callers to call center
-	•	Technical skills: Python, Splunk
+EDUCATION
+
+University of Minnesota | Minneapolis, MN	
+M.S. in Computer Science	        	                                                                                                     	  December 2026
+B.S. in Computer Science and Mathematics								  December 2019
 
 TECHNICAL SKILLS
 
 
-Languages: C#, Javascript/HTML/CSS, SQL, Typescript, MUMPS, Python
-Frameworks: React, Redux, Redux Toolkit, RTK Query, JQuery, .NET, Entity Framework, Fluent API
-Tools: Git, Docker, AWS, Fiddler, Postman, Jira, CI/CD, Microsoft Power Automate
+Core Languages: C#, JavaScript and TypeScript, SQL
+Backend: .NET, Entity Framework, REST APIs
+Frontend: React, Redux, RTK Query
+Cloud and DevOps: Azure, Azure DevOps (YAML), Docker

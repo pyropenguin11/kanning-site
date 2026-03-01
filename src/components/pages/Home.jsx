@@ -4,30 +4,33 @@ import Footer from '../shared/Footer';
 import ContentCard from '../content-display/ContentCard';
 import '../../styles/shared.css';
 const Home = () => {
-  const loremIpsumText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu orci eget dolor ultrices tincidunt vitae non ex. Donec malesuada lacus enim, et cursus est egestas vitae. Vivamus sodales neque.';
   const cards = [
     {
       imageName: "homer",
       imageFormat: "png",
-      text: loremIpsumText,
+      imageAlt: "Portrait of Homer Simpson",
+      text: 'My name is Nick. I created this website to share more about my professional background and personal interests.',
       imageSide: "left"
     },
     {
-      imageName: "homer",
+      imageName: "umn",
       imageFormat: "png",
-      text: loremIpsumText,
+      imageAlt: "University of Minnesota logo",
+      text: 'Most of my work is with C#/.NET in the Microsoft ecosystem. My educational background is in computer science, with an emphasis on networking and software design.',
       imageSide: "right"
     },
     {
-      imageName: "homer",
-      imageFormat: "png",
-      text: loremIpsumText,
+      imageName: "biking",
+      imageFormat: "avif",
+      imageAlt: "Cycling-themed photo",
+      text: 'Outside of work, my favorite activities are running, biking, reading books, and following international soccer.',
       imageSide: "left"
     },
     {
-      imageName: "homer",
-      imageFormat: "png",
-      text: loremIpsumText,
+      imageName: "heat",
+      imageFormat: "jpg",
+      imageAlt: "Poster art for the film Heat",
+      text: 'My favorite movie is the 1995 action-thriller Heat, starring Al Pacino, Robert De Niro, and Val Kilmer. I appreciate how the film portrays a truly kaleidoscopic view of the human experience.',
       imageSide: "right"
     }
   ];
@@ -37,15 +40,15 @@ const Home = () => {
       <Navbar/>
       <div className="main-container">
         <div className="content-container">
-        <h1>
-          Welcome to my website!
-        </h1>
+        <h1>Welcome to my website!</h1>
         <div className="cards-container">
-          {cards.map((c) => {
+          {cards.map((c, index) => {
             return (
               <ContentCard
+                key={`${c.imageSide}-${index}`}
                 imageName={c.imageName}
                 imageFormat={c.imageFormat}
+                imageAlt={c.imageAlt}
                 text={c.text}
                 imageSide={c.imageSide}
               />
