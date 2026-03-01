@@ -37,66 +37,6 @@
     letter-spacing: 0.08em;
 }
 
-.section-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.section-heading h2 {
-    margin: 0;
-    color: var(--snes-accent);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-.section-heading p {
-    margin: 0;
-    color: var(--snes-subtext);
-}
-
-.blog-placeholder {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.blog-placeholder p {
-    margin: 0;
-    line-height: 1.7;
-    color: var(--snes-text);
-}
-
-.blog-placeholder-card {
-    background-color: rgba(214, 209, 196, 0.5);
-    border: 1px dashed var(--snes-border);
-    border-radius: 12px;
-    padding: 1.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-}
-
-.blog-placeholder-card h2 {
-    margin: 0;
-    color: var(--snes-accent);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-
-.blog-placeholder-card ul {
-    margin: 0;
-    padding-left: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: var(--snes-subtext);
-}
-
-.blog-placeholder-card li::marker {
-    color: var(--snes-highlight);
-}
-
 @media screen and (max-width: 780px) {
     .blog-hero {
         padding: 1.75rem;

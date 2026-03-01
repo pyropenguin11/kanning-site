@@ -6,8 +6,7 @@ import ResumeCard from '../content-display/ResumeCard';
 import '../../styles/shared.css';
 const Resume = () => {
   const summary = {
-    location: 'Minneapolis, MN',
-    blurb: 'Software developer with a track record of shipping large-scale scheduling platforms, analytics dashboards, and clinician-facing tooling across automotive, healthcare, and financial industries. Reach out via the contact form for collaboration or questions.',
+    blurb: 'Software Engineer with 5+ years of experience designing and modernizing full-stack systems in retail, healthcare, and workforce management domains. Strong background in C#/.NET, React, and Azure DevOps with experience in microservice architecture, CI/CD modernization, and cloud deployment strategy.',
   };
 
   const education = [
@@ -15,7 +14,7 @@ const Resume = () => {
       school: 'University of Minnesota',
       location: 'Minneapolis, MN',
       items: [
-        { title: 'M.S. in Computer Science', detail: 'Anticipated December 2025' },
+        { title: 'M.S. in Computer Science', detail: 'December 2026' },
         { title: 'B.S. in Computer Science and Mathematics', detail: 'December 2019' },
       ],
     },
@@ -23,18 +22,27 @@ const Resume = () => {
 
   const experience = [
     {
+      company: 'TempWorks Software',
+      location: 'Bloomington, MN',
+      role: 'Software Engineer',
+      dates: 'July 2024 – Present',
+      achievements: [
+        'Designed and implemented a microservice integrating TempWorks’ core platform with a third-party banking partner to enable earned wage access for temporary workers.',
+        'Migrated classic Azure DevOps pipelines to YAML-based CI/CD workflows, enabling automated deployments to Azure App Services and improving release reliability.',
+        'Led performance testing during cloud migration initiative, identifying latency increases when decoupling API services from database infrastructure and influencing infrastructure deployment strategy.',
+      ],
+    },
+    {
       company: 'Blain’s Farm and Fleet',
       location: 'Janesville, WI',
       role: 'Software Developer',
       dates: 'January 2022 – June 2023',
       achievements: [
-        'Led development of a new automotive services scheduling system and customer-facing website that enabled over 300,000 appointments in one year.',
-        'Managed deployment to AWS with an Azure DevOps pipeline and Docker-based infrastructure.',
-        'Integrated the automotive system with existing store software to streamline in-store checkout workflows.',
-        'Enhanced internal call center tooling to speed up vehicle order scheduling and customer support.',
-        'Modernized intranet error handling with Microsoft Power Automate for precise alerting.',
+        'Led full-stack development of automotive services scheduling platform (C#/.NET, React), enabling 300,000+ customer appointments in the first year.',
+        'Integrated platform with legacy store systems to streamline in-store checkout workflows.',
+        'Automated AWS deployments using Docker and Azure DevOps pipelines.',
+        'Modernized intranet error handling and alerting using Power Automate.',
       ],
-      skills: ['C#', '.NET', 'JavaScript', 'React', 'Redux', 'Redux Toolkit', 'RTK Query', 'Docker', 'Entity Framework', 'SQL'],
     },
     {
       company: 'Epic Systems',
@@ -42,41 +50,18 @@ const Resume = () => {
       role: 'Software Developer',
       dates: 'February 2020 – December 2021',
       achievements: [
-        'Migrated high-impact clinician-facing workflows to a modern web client, including reusable form infrastructure.',
-        'Designed and implemented performance testing processes to safeguard new releases.',
-        'Delivered multi-form viewing capabilities so clinicians could compare patient records side by side.',
-        'Resolved hundreds of bugs spanning accessibility fixes and critical time-sensitive issues.',
+        'Oversaw migration of clinical forms to modern web client, building reusable infrastructure for patient data entry workflows.',
+        'Designed performance testing framework to prevent regressions and ensure feature reliability.',
+        'Improved reliability and accessibility of large-scale healthcare application by resolving high-priority defects.',
       ],
-      skills: ['C#', 'JavaScript', 'TypeScript', 'MUMPS', 'Fiddler', 'Visual Studio Profiler'],
-    },
-    {
-      company: 'TCF Bank',
-      location: 'Plymouth, MN',
-      role: 'IT Digital Intern',
-      dates: 'May 2018 – August 2018',
-      achievements: [
-        'Built DevOps dashboards that visualized deployment pipelines for the web platform team.',
-        'Connected to Jenkins, Octopus, and VersionOne APIs via C#/.NET to centralize release status data in SQLite.',
-      ],
-      skills: ['C#', 'JavaScript', 'jQuery', 'VersionOne'],
-    },
-    {
-      company: 'Optum',
-      location: 'Minnetonka, MN',
-      role: 'IT Digital Intern',
-      dates: 'June 2017 – August 2017',
-      achievements: [
-        'Developed Splunk dashboards that clarified data management health for operations teams.',
-        'Performed Python-based feature engineering to identify repeat callers in support center analytics.',
-      ],
-      skills: ['Python', 'Splunk'],
     },
   ];
 
   const technicalSkills = {
-    languages: ['C#', 'JavaScript / HTML / CSS', 'SQL', 'TypeScript', 'MUMPS', 'Python'],
-    frameworks: ['React', 'Redux', 'Redux Toolkit', 'RTK Query', 'jQuery', '.NET', 'Entity Framework', 'Fluent API'],
-    tools: ['Git', 'Docker', 'AWS', 'Fiddler', 'Postman', 'Jira', 'CI/CD', 'Microsoft Power Automate'],
+    coreLanguages: ['C#', 'JavaScript and TypeScript', 'SQL'],
+    backend: ['.NET', 'Entity Framework', 'REST APIs'],
+    frontend: ['React', 'Redux', 'RTK Query'],
+    cloudAndDevOps: ['Azure', 'Azure DevOps (YAML)', 'Docker'],
   };
 
   const cards = [
@@ -87,7 +72,6 @@ const Resume = () => {
         <div className="resume-summary">
           <p>{summary.blurb}</p>
           <div className="resume-summary-contact">
-            <span>{summary.location}</span>
             <span><a href="/contact">Contact form</a></span>
           </div>
         </div>
@@ -132,15 +116,13 @@ const Resume = () => {
                 <strong>{role.role}</strong>
                 <span>{role.dates}</span>
               </div>
-              <ul>
-                {role.achievements.map((achievement) => (
-                  <li key={achievement}>{achievement}</li>
-                ))}
-              </ul>
-              <div className="resume-entry-skills">
-                <span>Tools & Tech:</span>
-                <span>{role.skills.join(', ')}</span>
-              </div>
+              {role.achievements.length > 0 && (
+                <ul>
+                  {role.achievements.map((achievement) => (
+                    <li key={achievement}>{achievement}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
@@ -152,16 +134,20 @@ const Resume = () => {
       fragment: (
         <div className="resume-section resume-skills">
           <div>
-            <h4>Languages</h4>
-            <p>{technicalSkills.languages.join(', ')}</p>
+            <h4>Core Languages</h4>
+            <p>{technicalSkills.coreLanguages.join(', ')}</p>
           </div>
           <div>
-            <h4>Frameworks</h4>
-            <p>{technicalSkills.frameworks.join(', ')}</p>
+            <h4>Backend</h4>
+            <p>{technicalSkills.backend.join(', ')}</p>
           </div>
           <div>
-            <h4>Tools</h4>
-            <p>{technicalSkills.tools.join(', ')}</p>
+            <h4>Frontend</h4>
+            <p>{technicalSkills.frontend.join(', ')}</p>
+          </div>
+          <div>
+            <h4>Cloud and DevOps</h4>
+            <p>{technicalSkills.cloudAndDevOps.join(', ')}</p>
           </div>
         </div>
       ),
