@@ -14,7 +14,7 @@ const Resume = () => {
       school: 'University of Minnesota',
       location: 'Minneapolis, MN',
       items: [
-        { title: 'M.S. in Computer Science', detail: 'December 2026' },
+        { title: 'M.S. in Computer Science', detail: 'December 2025' },
         { title: 'B.S. in Computer Science and Mathematics', detail: 'December 2019' },
       ],
     },
